@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import Navbar from '../components/navBar'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 import LoginForm from '../components/LoginForm'
 import RegisterForm from '../components/RegisterForm'
 import usuariosIniciales from '../data/usuarios'
