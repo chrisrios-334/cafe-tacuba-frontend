@@ -1,4 +1,5 @@
 function CartillaCard({ producto, verMas }) {
+  
   return (
     <div className="card h-100 shadow-sm border-0">
       <img

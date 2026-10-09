@@ -1,4 +1,5 @@
 function ComanderoModal({ comandero, total, agregarProducto, quitarProducto, hacerPedido, cerrar }) {
+  
   return (
     <div className="modal fade show d-block" tabIndex="-1">
       <div className="modal-dialog modal-dialog-centered">
@@ -28,15 +29,12 @@ function ComanderoModal({ comandero, total, agregarProducto, quitarProducto, hac
                       <button
                         className="btn btn-sm btn-outline-dark me-2"
                         onClick={() => quitarProducto(p)}
-                      >
-                        -
+                      > -
                       </button>
                       <button
                         className="btn btn-sm btn-dark"
                         onClick={() => agregarProducto(p)}
-                      >
-                        +
-                      </button>
+                      >  + </button>
                       <span className="ms-3">
                         ${(p.precio * p.cantidad).toLocaleString("es-AR")}
                       </span>
