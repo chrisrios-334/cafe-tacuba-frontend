@@ -1,16 +1,91 @@
-# React + Vite
+Café Tacuba
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto web desarrollado con React y Vite para una cafetería ficticia. Permite explorar productos, consultar recetas de café, gestionar un comandero y utilizar formularios de registro e inicio de sesión.
 
-Currently, two official plugins are available:
+Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React y Vite
 
-## React Compiler
+JavaScript y JSX
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Router
 
-## Expanding the ESLint configuration
+Bootstrap 5
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Axios
+
+SweetAlert2
+
+HTML5 y CSS3
+
+Funcionalidades
+
+Home: presentación de la cafetería, productos y sección Sobre nosotros.
+
+Login: registro e inicio de sesión simulado mediante localStorage.
+
+Cartilla: catálogo de productos con comandero interactivo para agregar y quitar productos y calcular el total.
+
+Recetas: consulta de recetas de café mediante una API pública.
+
+Navegación: rutas gestionadas con React Router.
+
+TP7 — Hooks de React
+
+Se utiliza useState para administrar estados como los productos del comandero, formularios, recetas, carga y errores.
+
+Se utiliza useEffect para ejecutar efectos secundarios, como inicializar el carrusel de Bootstrap y realizar solicitudes a la API.
+
+TP8 — Consumo de API
+
+La página Recetas utiliza Axios para consultar la API pública de SampleAPIs.
+
+Se implementan:
+
+useEffect para ejecutar la solicitud.
+
+useState para almacenar los datos, la carga y los errores.
+
+map() para mostrar las recetas.
+
+SweetAlert2 para informar errores.
+
+Una variable de entorno para configurar la URL de la API.
+
+Instalación
+
+Clonar el repositorio:
+
+git clone https://github.com/chrisrios-334/cafe-tacuba-frontend.git
+
+Ingresar a la carpeta:
+
+cd cafe-tacuba-frontend
+
+Instalar las dependencias:
+
+npm install
+
+Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
+
+VITE_API_URL=https://api.sampleapis.com/coffee/hot
+
+Iniciar el servidor de desarrollo:
+
+npm run dev
+
+Compilación
+
+Para generar la versión de producción:
+
+npm run build
+
+Observaciones
+
+El registro y el inicio de sesión utilizan localStorage con fines educativos. No representan un sistema de autenticación seguro para producción.
+
+El proyecto está preparado para continuar incorporando funcionalidades y una futura integración con un backend.
+
+Repositorio
+
+https://github.com/chrisrios-334/cafe-tacuba-frontend

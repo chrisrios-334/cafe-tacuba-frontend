@@ -1,5 +1,4 @@
 function ProductCard({ nombre, descripcion, imagen, ingredientes }) {
-
   return (
     <article className="card h-100 shadow-sm overflow-hidden">
       <div className="ratio ratio-4x3">
@@ -8,14 +7,6 @@ function ProductCard({ nombre, descripcion, imagen, ingredientes }) {
           className="object-fit-cover"
           alt={nombre}
         />
-      </div>
-      <div className="card-body">
-        <h5 className="card-title">
-          {nombre}
-        </h5>
-        <p className="card-text">
-          {descripcion}
-        </p>
       </div>
       <div className="card-body">
         <h5 className="card-title">{nombre}</h5>
@@ -32,7 +23,6 @@ function ProductCard({ nombre, descripcion, imagen, ingredientes }) {
         )}
       </div>
     </article>
-  )
+  );
 }
-
-export default ProductCard
+export default ProductCard;
