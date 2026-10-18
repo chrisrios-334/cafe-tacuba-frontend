@@ -26,6 +26,7 @@ function ProductSection({ productos }) {
                 nombre={cafe.nombre}
                 descripcion={cafe.descripcion}
                 imagen={cafe.imagen}
+                ingredientes={cafe.ingredientes}  
               />
             </div>
           ))}
@@ -37,6 +38,14 @@ function ProductSection({ productos }) {
           className="btn btn-dark d-block mx-auto w-75 py-2"
         >
           Ver cartilla
+        </Link>
+        </div>
+      <div className="text-center mt-4">
+        <Link
+          to="/Recetas"
+          className="btn btn-dark d-block mx-auto w-75 py-2"
+        >
+          Conoce como se preparan nuestros cafes
         </Link>
       </div>
     </section>
