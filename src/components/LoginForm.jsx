@@ -1,4 +1,5 @@
 function LoginForm({ iniciarSesion, cambiarARegistro, usuario, setUsuario, contrasena, setContrasena, mensaje, tipoMensaje }) {
+  
   return (
     <form onSubmit={iniciarSesion}>
       <div className="mb-3">
@@ -47,4 +48,5 @@ function LoginForm({ iniciarSesion, cambiarARegistro, usuario, setUsuario, contr
     </form>
   )
 }
+
 export default LoginForm

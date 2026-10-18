@@ -13,17 +13,13 @@ function Nosotros() {
       })
     }
   }, [])
-
   return (
     <section id="nosotros" className="position-relative my-5">
-
       <div
         id="carouselFondo"
         className="carousel slide"
       >
-
         <div className="carousel-inner">
-
           <div className="carousel-item active">
             <img
               src="/img/bg-nosotros1.jpg"
@@ -32,7 +28,6 @@ function Nosotros() {
               alt="Interior de Café Tacuba"
             />
           </div>
-
           <div className="carousel-item">
             <img
               src="/img/bg-nosotros2.avif"
@@ -41,7 +36,6 @@ function Nosotros() {
               alt="Preparando café en Café Tacuba"
             />
           </div>
-
           <div className="carousel-item">
             <img
               src="/img/bg-nosotros3.jpg"
@@ -50,38 +44,28 @@ function Nosotros() {
               alt="Ambiente de Café Tacuba"
             />
           </div>
-
         </div>
-
       </div>
-
       <div className="container position-absolute top-50 start-50 translate-middle text-white text-center">
-
         <h2 className="mb-4">
           Sobre nosotros
         </h2>
-
         <p>
           Café Tacuba nació como un espacio pensado para disfrutar de un buen
           café, productos artesanales y momentos compartidos.
         </p>
-
         <p>
           Seleccionamos cuidadosamente nuestros ingredientes para ofrecer
           una experiencia sencilla y agradable en cada visita.
         </p>
-
         <p>
           Creemos que una taza de café puede transformar cualquier momento del
           día.
         </p>
-
         <button className="btn btn-light">
           Más info
         </button>
-
       </div>
-
     </section>
   )
 }

@@ -75,4 +75,5 @@ function RegisterForm({ registrarUsuario, volverAlLogin, nombre, setNombre, apel
     </form>
   )
 }
+
 export default RegisterForm

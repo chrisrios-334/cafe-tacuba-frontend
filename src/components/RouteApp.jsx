@@ -6,14 +6,10 @@ import Cartilla from "../pages/Cartilla";
 const RouteApp = () => {
   return (
     <div>
-        <Routes>
-
+      <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/login" element={<Login />} />
-
         <Route path="/cartilla" element={<Cartilla />} />
-
       </Routes>
     </div>
   )

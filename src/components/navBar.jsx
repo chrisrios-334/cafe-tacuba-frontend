@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Navbar({ mostrarIngresar = true }) {
+
   const navigate = useNavigate()
   const [usuarioActivo, setUsuarioActivo] = useState(() => {
     return JSON.parse(localStorage.getItem('usuarioActivo'))

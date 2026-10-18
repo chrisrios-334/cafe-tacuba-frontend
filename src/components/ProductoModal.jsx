@@ -43,4 +43,5 @@ function ProductoModal({ producto, agregarProducto, cerrar }) {
     </div>
   )
 }
+
 export default ProductoModal

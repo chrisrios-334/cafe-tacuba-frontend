@@ -1,4 +1,4 @@
-  const cartilla = [
+const cartilla = [
   {
     categoria: "Cafés calientes",
     clase: "",
@@ -13,7 +13,7 @@
         "Agua filtrada",
         "Taza pequeña",
         "Aroma intenso",
-        "Cuerpo fuerte"`
+        "Cuerpo fuerte"`,
       },
       {
         nombre: "Latte",
@@ -25,19 +25,19 @@
         "Leche vaporizada",
         "Espuma ligera",
         "Taza grande",
-        "Opcional: arte latte"`
+        "Opcional: arte latte"`,
       },
       {
         nombre: "Cappuccino",
         descripcion: "Espresso, leche espumosa y cacao",
         imagen: "img/cappuccino.webp",
-        precio: 2400 ,
+        precio: 2400,
         contiene: `
         "Espresso",
         "Leche vaporizada",
         "Espuma abundante",
         "Cacao en polvo",
-        "Taza mediana"` 
+        "Taza mediana"`,
       },
       {
         nombre: "Mocha",
@@ -49,7 +49,7 @@
         "Chocolate derretido",
         "Leche vaporizada",
         "Crema opcional",
-        "Cacao espolvoreado"` 
+        "Cacao espolvoreado"`,
       },
       {
         nombre: "Macchiato",
@@ -61,7 +61,7 @@
         "Espuma de leche",
         "Taza pequeña",
         "Sabor intenso",
-        "Toque cremoso"`
+        "Toque cremoso"`,
       },
     ],
   },
@@ -79,7 +79,7 @@
         "Espresso caliente",
         "Taza o copa de postre",
         "Textura cremosa",
-        "Contraste frío-caliente"`
+        "Contraste frío-caliente"`,
       },
       {
         nombre: "Iced Latte",
@@ -91,7 +91,7 @@
         "Leche fría",
         "Cubos de hielo",
         "Vaso alto",
-        "Sabor suave y refrescante"`
+        "Sabor suave y refrescante"`,
       },
       {
         nombre: "Cold Brew",
@@ -103,7 +103,7 @@
         "Agua filtrada fría",
         "Proceso de 12 horas",
         "Vaso con hielo",
-        "Sabor menos ácido"`
+        "Sabor menos ácido"`,
       },
       {
         nombre: "Frappé de cacao",
@@ -115,7 +115,7 @@
         "Cacao en polvo",
         "Leche fría",
         "Crema batida",
-        "Textura espesa y dulce"`
+        "Textura espesa y dulce"`,
       },
     ],
   },
@@ -133,7 +133,7 @@
         "Agua caliente",
         "Opción de leche",
         "Rodaja de limón",
-        "Taza mediana"`
+        "Taza mediana"`,
       },
       {
         nombre: "Té verde",
@@ -145,8 +145,7 @@
         "Agua caliente",
         "Taza pequeña",
         "Aroma herbal",
-        "Sabor ligero"`
-
+        "Sabor ligero"`,
       },
       {
         nombre: "Infusión de jazmín",
@@ -158,19 +157,19 @@
         "Agua caliente",
         "Taza de porcelana",
         "Aroma floral",
-        "Sabor delicado"`
+        "Sabor delicado"`,
       },
       {
         nombre: "Submarino",
         descripcion: "Cacao a la taza con leche",
         imagen: "img/submarino.jpeg",
         precio: 2200,
-        contiene:`
+        contiene: `
         "Tableta de chocolate",
         "Leche caliente",
         "Taza grande",
         "Sabor intenso",
-        "Textura cremosa"`
+        "Textura cremosa"`,
       },
     ],
   },
@@ -188,7 +187,7 @@
         "Manteca",
         "Azúcar",
         "Levadura",
-        "Glaseado ligero"`
+        "Glaseado ligero"`,
       },
       {
         nombre: "Brownie",
@@ -200,7 +199,7 @@
         "Manteca",
         "Azúcar",
         "Huevos",
-        "Nueces picadas"`
+        "Nueces picadas"`,
       },
       {
         nombre: "Lemon Pie",
@@ -212,7 +211,7 @@
         "Crema de limón",
         "Azúcar",
         "Huevos",
-        "Merengue italiano"`
+        "Merengue italiano"`,
       },
       {
         nombre: "Cheesecake",
@@ -224,7 +223,7 @@
         "Base de galletas",
         "Azúcar",
         "Huevos",
-        "Salsa de frutos rojos"`
+        "Salsa de frutos rojos"`,
       },
       {
         nombre: "Alfajor de maicena",
@@ -236,7 +235,7 @@
         "Harina",
         "Manteca",
         "Dulce de leche",
-        "Coco rallado"`
+        "Coco rallado"`,
       },
     ],
   },

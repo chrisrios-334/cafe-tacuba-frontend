@@ -1,4 +1,5 @@
 function BotonComadero({ cantidad, abrir }) {
+  
   return (
     <div>
       <button
@@ -13,4 +14,5 @@ function BotonComadero({ cantidad, abrir }) {
     </div>
   )
 }
+
 export default BotonComadero
