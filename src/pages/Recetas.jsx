@@ -10,31 +10,19 @@ const API_URL = import.meta.env.VITE_API_URL;
 function Recetas() {
   const [cafes, setCafes] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const controller = new AbortController();
     const traerCafes = async () => {
       try {
-        const response = await axios.get(API_URL, {
-          signal: controller.signal
-        });
-        if (!Array.isArray(response.data)) {
-          throw new Error("Respuesta inválida de la API");
-        }
+        const response = await axios.get(API_URL);
         setCafes(response.data);
-      } catch (err) {
-        if (controller.signal.aborted) return;
-        setError(err.message);
+      } catch {
         Swal.fire("Error", "No se pudieron cargar las recetas", "error");
       } finally {
-        if (!controller.signal.aborted) {
-          setLoading(false);
-        }
+        setLoading(false);
       }
     };
     traerCafes();
-    return () => controller.abort();
   }, []);
 
   return (
@@ -42,20 +30,8 @@ function Recetas() {
       <NavBar />
       <main className="container py-5">
         <h2 className="text-center mb-4">Recetas</h2>
-        {loading && (
-          <p className="text-center">Cargando recetas...</p>
-        )}
-        {error && (
-          <p className="text-center text-danger">
-            No se pudieron cargar las recetas.
-          </p>
-        )}
-        {!loading && !error && cafes.length === 0 && (
-          <p className="text-center">
-            No hay recetas disponibles.
-          </p>
-        )}
-        {!loading && !error && cafes.length > 0 && (
+        {loading && <p className="text-center">Cargando recetas...</p>}
+        {!loading && (
           <div className="row g-4">
             {cafes.map((cafe) => (
               <div className="col-6 col-md-4" key={cafe.id}>
