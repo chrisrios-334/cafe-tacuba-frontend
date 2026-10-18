@@ -2,17 +2,18 @@ import { useEffect } from 'react'
 import Carousel from 'bootstrap/js/dist/carousel'
 
 function Nosotros() {
-
   useEffect(() => {
     const carouselElement = document.getElementById('carouselFondo')
-
-    if (carouselElement) {
-      new Carousel(carouselElement, {
-        interval: 4000,
-        ride: 'carousel'
-      })
+    if (!carouselElement) return
+    const carousel = Carousel.getOrCreateInstance(carouselElement, {
+      interval: 2000,
+      ride: 'carousel'
+    })
+    return () => {
+      carousel.dispose()
     }
   }, [])
+
   return (
     <section id="nosotros" className="position-relative my-5">
       <div
