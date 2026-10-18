@@ -7,7 +7,12 @@ function ProductSection({ productos }) {
     <section
       id="cafes"
       className="text-white py-5 my-4"
-      style={{ backgroundImage: "url('/img/bg-menu.jpg')" }}
+      style={{
+        backgroundImage: "url('/img/bg-menu.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="container">
         <h2 className="text-center mb-4">
