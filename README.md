@@ -1,91 +1,50 @@
-Café Tacuba
+# Café Tacuba
 
-Proyecto web desarrollado con React y Vite para una cafetería ficticia. Permite explorar productos, consultar recetas de café, gestionar un comandero y utilizar formularios de registro e inicio de sesión.
+Proyecto de una cafetería desarrollado con React y Vite.
 
-Tecnologías utilizadas
+La página permite ver los productos disponibles, consultar recetas de café, registrarse, iniciar sesión y agregar productos a un comandero.
 
-React y Vite
+## Tecnologías
 
-JavaScript y JSX
+- React
+- JavaScript
+- Bootstrap
+- React Router
+- Axios
+- SweetAlert2
+- Vite
 
-React Router
+## Funcionalidades
 
-Bootstrap 5
+- Home: página principal con productos e información de la cafetería.
+- Login: permite registrar usuarios e iniciar sesión usando localStorage.
+- Cartilla: muestra los productos y permite agregarlos o quitarlos del comandero.
+- Recetas: muestra recetas de café obtenidas desde una API pública.
 
-Axios
+## TP7 - Hooks
 
-SweetAlert2
+Usamos useState para guardar y actualizar datos que cambian, como los productos del comandero, los formularios y las recetas.
 
-HTML5 y CSS3
+También usamos useEffect para ejecutar funciones al cargar componentes, por ejemplo el carrusel de Nosotros y la petición a la API.
 
-Funcionalidades
+## TP8 - API
 
-Home: presentación de la cafetería, productos y sección Sobre nosotros.
+Para las recetas usamos una API pública de café.
 
-Login: registro e inicio de sesión simulado mediante localStorage.
+La petición se hace con Axios dentro de useEffect y los datos se guardan usando useState.
 
-Cartilla: catálogo de productos con comandero interactivo para agregar y quitar productos y calcular el total.
+Con map mostramos las recetas en tarjetas. También agregamos un mensaje de carga y usamos SweetAlert2 para mostrar errores.
 
-Recetas: consulta de recetas de café mediante una API pública.
+La URL de la API se guarda en un archivo .env para no escribirla directamente en el componente.
 
-Navegación: rutas gestionadas con React Router.
+## Instalación
 
-TP7 — Hooks de React
+1. Clonar el repositorio.
+2. Entrar a la carpeta del proyecto.
+3. Ejecutar npm install.
+4. Crear un archivo .env con la variable VITE_API_URL, usando como referencia .env.example.
+5. Ejecutar npm run dev.
 
-Se utiliza useState para administrar estados como los productos del comandero, formularios, recetas, carga y errores.
+## Repositorio
 
-Se utiliza useEffect para ejecutar efectos secundarios, como inicializar el carrusel de Bootstrap y realizar solicitudes a la API.
-
-TP8 — Consumo de API
-
-La página Recetas utiliza Axios para consultar la API pública de SampleAPIs.
-
-Se implementan:
-
-useEffect para ejecutar la solicitud.
-
-useState para almacenar los datos, la carga y los errores.
-
-map() para mostrar las recetas.
-
-SweetAlert2 para informar errores.
-
-Una variable de entorno para configurar la URL de la API.
-
-Instalación
-
-Clonar el repositorio:
-
-git clone https://github.com/chrisrios-334/cafe-tacuba-frontend.git
-
-Ingresar a la carpeta:
-
-cd cafe-tacuba-frontend
-
-Instalar las dependencias:
-
-npm install
-
-Crear un archivo .env en la raíz del proyecto con el siguiente contenido:
-
-VITE_API_URL=https://api.sampleapis.com/coffee/hot
-
-Iniciar el servidor de desarrollo:
-
-npm run dev
-
-Compilación
-
-Para generar la versión de producción:
-
-npm run build
-
-Observaciones
-
-El registro y el inicio de sesión utilizan localStorage con fines educativos. No representan un sistema de autenticación seguro para producción.
-
-El proyecto está preparado para continuar incorporando funcionalidades y una futura integración con un backend.
-
-Repositorio
-
-https://github.com/chrisrios-334/cafe-tacuba-frontend
+[GitHub Café Tacuba](https://github.com/chrisrios-334/cafe-tacuba-frontend)
